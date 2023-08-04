@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     margin: 0;
@@ -859,10 +860,10 @@ textarea::placeholder {
 {
   background: rgb(28, 27, 27);
   background-size: 30%;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -985,7 +986,7 @@ textarea::placeholder {
 
 
 
-@media (max-width:500px) {
+@media (max-width:480px) {
     .main {
         flex-direction: column;
         height: calc(100% - 80px);
@@ -1293,7 +1294,7 @@ textarea::placeholder {
 
     .wrapper .carousel {
         grid-auto-columns: 100%;
-        column-gap: 80px;
+        column-gap: 50px;
     }
 
     .project {
@@ -1309,12 +1310,12 @@ textarea::placeholder {
 
     .carousel .card {
         border: 4px solid #FDEE30;
-        width: 74vw;
+        width: 80vw;
         
     }
 
     .wrapper {
-        width: 80%;
+        width: 85%;
 
         margin-left: 4vw;
 
@@ -1353,5 +1354,20 @@ textarea::placeholder {
            
       
       }
+      #preloader
+      {
+       width:100vw;
+       overflow-x: hidden;
+       padding: 0;
+       margin: 0;
+     
+       height: 100vh;
+      }
+       #preloader img
+      {
+       width: 55%;
+        height: 30%;
+   
+    }
       
 }
