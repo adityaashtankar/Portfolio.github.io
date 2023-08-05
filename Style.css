@@ -369,6 +369,7 @@ b {
     border: 2px solid white;
    border-radius: 50%;
    overflow: hidden;
+   transition: all 0.3s ease-in-out;
  
 }
 .social i{
@@ -616,6 +617,7 @@ textarea::placeholder {
     border-radius: 10px;
     border: none;
     margin: 20px;
+    box-shadow: 0 0px 20px black;
     background-color: white;
     color: whitesmoke;
     width: 110px;
@@ -632,6 +634,9 @@ textarea::placeholder {
     background-color: #201e1e;
     color: #FDEE30;
 
+}
+.send:active {
+    scale: 0.8;
 }
 
 .container3 img {
@@ -815,9 +820,6 @@ textarea::placeholder {
   margin-right: 3vw;
   
 }
-.check{
-
-}
 .end {
     color: #ddd;
     width: 100%;
@@ -875,46 +877,11 @@ textarea::placeholder {
   
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 900px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2));
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:952px) {
     label.logo1 {
         font-size: 30px;
@@ -931,9 +898,6 @@ textarea::placeholder {
 
     }
 }
-
-
-
 @media (max-width:858px) {
     .checkbtn {
         display: block;
@@ -976,28 +940,20 @@ textarea::placeholder {
         top: 50px;
     }
 }
-
-
-
-
-
-
-
-
-
-
+/* Responsive for Mobile devices */
 @media (max-width:480px) {
     .main {
         flex-direction: column;
         height: calc(100% - 80px);
+     
 
     }
 
     .content {
 
         width: 100%;
-
-        height: 55vh;
+    
+        height: 50vh;
         justify-content: center;
         display: flex;
         align-items: center;
@@ -1007,7 +963,9 @@ textarea::placeholder {
     .image {
 
         width: 100%;
-        height: 45vh;
+        height: 50vh;
+        
+       
 
     }
 
@@ -1073,7 +1031,7 @@ textarea::placeholder {
 
     .mine {
         width: 70vw;
-        height: 40vh;
+        height: 37vh;
         margin-left: -30vw;
         border-radius: 50%;
 
@@ -1136,9 +1094,11 @@ textarea::placeholder {
 
     .main-abt p {
 
-        font-size: 5.6vw;
+        font-size: 5.5vw;
         overflow-y: hidden;
         word-spacing: 4px;
+        font-weight: 100;
+        color: #ddddddcf;
         line-height: 7.5vw;
     }
 
@@ -1157,12 +1117,11 @@ textarea::placeholder {
         padding: 8vw;
         align-items: center;
         text-align: center;
-        grid-gap: 1rem;
+        grid-gap: 2rem;
         margin-top: 4vw;
         font-size: 1.2rem;
 
     }
-
     .header {
 
         font-size: 6.5vw;
@@ -1170,8 +1129,8 @@ textarea::placeholder {
     }
 
     .imghtml {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         position: relative;
         border-radius: 40px;
         display: flex;
@@ -1179,6 +1138,7 @@ textarea::placeholder {
         justify-content: center;
         align-items: center;
         transition: 1s;
+        box-shadow: none;
     }
 
     .skill-box p {
@@ -1200,6 +1160,9 @@ textarea::placeholder {
 
         height: 120px;
 
+    }
+    .skill-title h3{
+       font-size: 4vw;
     }
 
     .container3 {
@@ -1262,10 +1225,11 @@ textarea::placeholder {
         width: 86vw;
         margin-top: -15px;
         border-radius: 5px;
+
     }
 
     input::placeholder {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     form textarea {
@@ -1279,7 +1243,7 @@ textarea::placeholder {
     }
 
     textarea::placeholder {
-        font-size: 4vw;
+        font-size: 5vw;
 
 
     }
@@ -1288,6 +1252,7 @@ textarea::placeholder {
         border-radius: 5px;
         width: 76vw;
         height: 90px;
+        font-size: 5vw;
         margin-top: 4vw;
         padding: 0;
     }
@@ -1320,6 +1285,11 @@ textarea::placeholder {
         margin-left: 4vw;
 
     }
+    .carousel .card h2{
+        color: red;
+        font-size: 8vw;
+        text-align: center;
+    }
 
     .carousel .card span {
         color: #6A6D78;
@@ -1335,7 +1305,8 @@ textarea::placeholder {
     }
     .btn-pro button{
         width: 22vw;
-        font-size: 3vw;
+        font-size: 4vw;
+        height: 45px;
     }
 
     .end {
@@ -1360,14 +1331,16 @@ textarea::placeholder {
        overflow-x: hidden;
        padding: 0;
        margin: 0;
-     
        height: 100vh;
       }
        #preloader img
       {
        width: 55%;
-        height: 30%;
+       height: 0%;
    
+    }
+    nav{
+        width: 100vw;
     }
       
 }
