@@ -1,7 +1,8 @@
-html{
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -139,11 +140,12 @@ nav .log {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-.hey::before{
+
+.hey::before {
     content: '';
     position: absolute;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid #FDEE30;
@@ -355,33 +357,37 @@ b {
     display: flex;
     align-items: center;
 }
-.social{
+
+.social {
     width: 80%;
     margin-left: 2vw;
-   
-   
+
+
 }
+
 .social a {
-   
+
     margin-right: 2vw;
     padding: 0.8vw;
     border: 2px solid white;
-   border-radius: 50%;
-   overflow: hidden;
-   transition: all 0.3s ease-in-out;
- 
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
 }
-.social i{
- 
+
+.social i {
+
     color: white;
 
- 
+
 }
+
 .social a:hover {
     background-color: var(--clr);
     border-color: var(--clr);
-  
-   
+
+
 }
 
 
@@ -454,7 +460,7 @@ b {
 }
 
 .header h1::before {
-    content:' ';
+    content: ' ';
     width: 4em;
     height: 5px;
     top: 1.1em;
@@ -481,8 +487,8 @@ b {
     position: relative;
     border-radius: 45px;
     display: flex;
-    box-shadow:grey 0px 10px 60px -12px; 
-   background-color: white;
+    box-shadow: grey 0px 10px 60px -12px;
+    background-color: white;
     justify-content: center;
     align-items: center;
     transition: 1s;
@@ -516,14 +522,15 @@ b {
     height: 150px;
     position: relative;
 
-  
+
 
 }
+
 .hd h1::before {
     content: '';
     width: 4em;
     position: absolute;
-    top:13vh;
+    top: 13vh;
     height: 5px;
     border-radius: 10px;
     background-color: #FDEE30;
@@ -557,7 +564,7 @@ b {
     font-size: 1.3vw;
     justify-content: center;
     align-items: center;
-  
+
 }
 
 
@@ -634,6 +641,7 @@ textarea::placeholder {
     color: #FDEE30;
 
 }
+
 .send:active {
     scale: 0.8;
 }
@@ -658,12 +666,13 @@ textarea::placeholder {
     position: relative;
 
 }
+
 .hp h1::before {
     content: '';
     width: 3.8em;
- 
+
     position: absolute;
-    top:12vh;
+    top: 12vh;
     height: 5px;
     border-radius: 10px;
     background-color: #FDEE30;
@@ -766,17 +775,18 @@ textarea::placeholder {
     flex-direction: column;
     border-radius: 8px;
 }
-.card .img{
+
+.card .img {
     width: 100%;
     height: 50%;
-  
+
 }
 
 .card .img img {
     width: 95%;
     height: 95%;
     object-fit: cover;
-  
+
 
 
 }
@@ -794,31 +804,36 @@ textarea::placeholder {
     padding: 10px;
     text-align: center;
 }
-.btn-pro button{
-   text-transform: uppercase;
+
+.btn-pro button {
+    text-transform: uppercase;
     color: black;
     width: 8vw;
     height: 6vh;
     cursor: pointer;
     margin-top: 1vw;
     background-color: #FDEE30;
-    box-shadow: 0px 0px 10px  #131212;
+    box-shadow: 0px 0px 10px #131212;
     border: none;
     border-color: #FDEE30;
     font-size: 1.1vw;
     font-weight: bold;
     transition: all 0.3s ease-in-;
 }
-.btn-pro button:hover{
+
+.btn-pro button:hover {
     background-color: #FDEE30;
 }
-.btn-pro button:active{
+
+.btn-pro button:active {
     scale: 0.8;
 }
-.demo{
-  margin-right: 3vw;
-  
+
+.demo {
+    margin-right: 3vw;
+
 }
+
 .end {
     color: #ddd;
     width: 100%;
@@ -832,49 +847,48 @@ textarea::placeholder {
     height: 80px;
 
 }
+
 .to-top {
     background: rgb(40, 39, 39);
     position: fixed;
-    right:32px;
-    width:50px;
+    right: 32px;
+    width: 50px;
     border: 4px solid white;
-    height:50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:35px;
-    color:#FDEE30;
+    font-size: 35px;
+    color: #FDEE30;
     text-decoration: none;
-    opacity:0;
+    opacity: 0;
     pointer-events: none;
     transition: all .4s;
     overflow-y: hidden;
-  }
-  
-  .to-top.active {
-    bottom:32px;
-    pointer-events: auto;
-    opacity:1;
-  }
-#preloader
-{
-  background: rgb(28, 27, 27);
-  background-size: 30%;
-  width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
-#preloader img
-{
-  width: 30%;
-  height: 30%;
-  
 
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#preloader {
+    background: rgb(28, 27, 27);
+    background-size: 30%;
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#preloader img {
+    width: 30%;
+    height: 30%;
 }
 @media screen and (max-width: 900px) {
     .wrapper .carousel {
@@ -944,14 +958,14 @@ textarea::placeholder {
     .main {
         flex-direction: column;
         height: calc(100% - 80px);
-     
+
 
     }
 
     .content {
 
         width: 100%;
-    
+
         height: 50vh;
         justify-content: center;
         display: flex;
@@ -963,15 +977,15 @@ textarea::placeholder {
 
         width: 100%;
         height: 50vh;
-        
-       
+
+
 
     }
 
     .head {
         width: 92%;
         margin-top: 17vw;
-       
+
 
 
     }
@@ -981,27 +995,31 @@ textarea::placeholder {
         margin-top: 2vw;
         display: flex;
     }
-    .name h1{
+
+    .name h1 {
         position: absolute;
-        width:100%;
+        width: 100%;
         height: 70px;
         overflow: hidden;
-        
+
     }
+
     .hey {
         font-size: 3vw;
         position: relative;
         top: 7vw;
 
     }
-    .hey::before{
-      
+
+    .hey::before {
+
         left: -8px;
         border-left: 5px solid #FDEE30;
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
-       
+
     }
+
     .head .bottom {
         font-size: 8.7vw;
         margin-top: 21vw;
@@ -1048,7 +1066,7 @@ textarea::placeholder {
 
     .about {
         flex-direction: column;
-      
+
 
     }
 
@@ -1064,7 +1082,7 @@ textarea::placeholder {
         justify-content: center;
         display: flex;
         align-items: center;
-      
+
 
     }
 
@@ -1076,21 +1094,24 @@ textarea::placeholder {
 
 
     }
-    .social{
+
+    .social {
         width: 90%;
         margin-left: 2vw;
-       
+
     }
+
     .social a {
-   
+
         margin-right: 4.5vw;
         font-size: 3vw;
         padding: 2.3vw;
         border-radius: 50%;
     }
-    .social i{
-     
-      color: aliceblue;
+
+    .social i {
+
+        color: aliceblue;
     }
 
     .main-abt h1 {
@@ -1109,14 +1130,15 @@ textarea::placeholder {
         line-height: 7.5vw;
     }
 
-     .skills {
-            height: 100vh;
-            padding-bottom: 0;
-         
-           
-           
-        
-        } 
+    .skills {
+        height: 100vh;
+        padding-bottom: 0;
+
+
+
+
+    }
+
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1129,6 +1151,7 @@ textarea::placeholder {
         font-size: 1.2rem;
 
     }
+
     .header {
 
         font-size: 6.5vw;
@@ -1168,8 +1191,9 @@ textarea::placeholder {
         height: 120px;
 
     }
-    .skill-title h3{
-       font-size: 4vw;
+
+    .skill-title h3 {
+        font-size: 4vw;
     }
 
     .container3 {
@@ -1218,7 +1242,6 @@ textarea::placeholder {
 
         width: 100%;
         height: 60vh;
-
         display: flex;
         margin-top: 50vw;
         font-size: 3.8vw;
@@ -1272,7 +1295,7 @@ textarea::placeholder {
     .project {
         padding: 0;
         width: 97%;
-        
+
 
     }
 
@@ -1283,7 +1306,7 @@ textarea::placeholder {
     .carousel .card {
         border: 4px solid #FDEE30;
         width: 80vw;
-        
+
     }
 
     .wrapper {
@@ -1292,7 +1315,8 @@ textarea::placeholder {
         margin-left: 4vw;
 
     }
-    .carousel .card h2{
+
+    .carousel .card h2 {
 
         font-size: 8vw;
         text-align: center;
@@ -1306,11 +1330,12 @@ textarea::placeholder {
     }
 
     .card .img img {
-        width:95%;
+        width: 95%;
         height: 95%;
         border-radius: 5px;
     }
-    .btn-pro button{
+
+    .btn-pro button {
         width: 22vw;
         font-size: 4vw;
         height: 45px;
@@ -1322,17 +1347,19 @@ textarea::placeholder {
         font-size: 3.5vw;
 
     }
+
     .to-top {
-        
-            width: 40px;
-            height: 40px;
-            transform: translateY(-20px);
-            background-color:black !important;
-            font-size: 25px !important;
-           
-      
-      }
-      /* #preloader
+
+        width: 40px;
+        height: 40px;
+        transform: translateY(-20px);
+        background-color: black !important;
+        font-size: 25px !important;
+
+
+    }
+
+    /* #preloader
       {
        width:100vw;
       
@@ -1346,8 +1373,8 @@ textarea::placeholder {
        height: 0%;
    
     } */
-    nav{
+    nav {
         width: 100vw;
     }
-      
+
 }
