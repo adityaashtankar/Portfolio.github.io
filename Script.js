@@ -15,6 +15,30 @@ function sendEmail() {
       document.getElementById("message").value,
   }).then((message) => alert("Message sent successfully"));
 }
+function isMobileDevice() {
+  return window.innerWidth <= 768;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var viewOnWebButton = document.getElementById('viewOnWebButton');
+  if (isMobileDevice()) {
+    viewOnWebButton.classList.add('mobile-only');
+  }
+});
+
+document.getElementById('viewOnWebButton').addEventListener('click', function() {
+  if (isMobileDevice()) {
+    var currentUrl = window.location.href;
+    var anchor = document.createElement('a');
+    anchor.setAttribute('href', currentUrl);
+    anchor.setAttribute('target', '_blank');
+    anchor.click();
+
+    // Remove the button from the DOM after it's clicked
+    var viewOnWebButton = document.getElementById('viewOnWebButton');
+    viewOnWebButton.parentNode.removeChild(viewOnWebButton);
+  }
+});
 var lastscolltop = 0;
 navbar = document.getElementById("navbar");
 window.addEventListener("scroll", function () {
