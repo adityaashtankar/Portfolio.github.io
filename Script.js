@@ -16,7 +16,7 @@ function sendEmail() {
   }).then((message) => alert("Message sent successfully"));
 }
 function isMobileDevice() {
-  return window.innerWidth <= 768;
+  return window.innerWidth <= 508;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -143,3 +143,4 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+

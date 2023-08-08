@@ -904,25 +904,19 @@ textarea::placeholder {
         font-size: 15px;
 
     }
-
-    .main .resume {
-        top: 40px;
-
-    }
 }
+/* Responsive for tablet devices */
 @media (max-width:858px) {
     .checkbtn {
         display: block;
 
     }
-
     nav ul {
-        position: fixed;
+        position:fixed;
         width: 100%;
         top: -100%;
-        background-color: #201e1e;
+        background-color:#201e1e;
         text-align: center;
-        margin-left: -7vw;
         transition: all 0.5s;
 
     }
@@ -951,7 +945,315 @@ textarea::placeholder {
     #check:checked~ul {
         top: 50px;
     }
+    .main {
+        flex-direction: column;
+        height: calc(100% - 80px);
+
+
+    }
+    
+    .content {
+
+        width: 100%;
+
+        height: 50vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .image {
+
+        width: 100%;
+        height: 50vh;
+
+
+
+    }
+    .head {
+        width: 92%;
+        margin-top: 12vw;
+
+
+
+    }
+   
+    .head h1 {
+        font-size: 9vw;
+        margin-top: 2vw;
+        display: flex;
+    }
+    .head .bottom {
+        font-size: 7vw;
+      
+        line-height: 15vw;
+    }
+
+    .head .about0 {
+        margin-top: -8vw;
+        font-size: 2vw;
+    }
+
+    .resume {
+
+        width: 13vw;
+        height: 6vh;
+        margin-top: 2vw;
+        font-size: 2vw;
+
+    }
+    .all {
+        position: relative;
+       
+    }
+    .shape {
+   display: none;
+    }
+    .mine{
+        width:50%;
+        border:2px solid #FDEE30;
+        box-shadow: 0px 0px 14px #FDEE30;
+        animation: pop 2s infinite ease-in-out;
+        transition: all 2s infinite ease-in-out;
+
+    }
+    @keyframes pop {
+        25%{
+            box-shadow:0px 0px 10px #FDEE30; 
+
+        }
+        50%{
+            box-shadow:0px 0px 15px #FDEE30; 
+
+        }
+        75%{
+            box-shadow:0px 0px 20px #FDEE30; 
+
+        }
+        100%{
+            box-shadow:0px 0px 25px #FDEE30; 
+
+        }
+        
+    }
+    .about{
+        flex-direction: column-reverse;
+       height: 100vh;
+    }
+    .abt-img {
+
+        display: none;
+  
+
+    }
+
+    .main-abt {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+  
+
+
+    }
+
+    .aboutc {
+
+        width: 70%;
+        padding-left: 10vw;
+
+
+
+    }
+
+    .social {
+        width: 70%;
+        margin-left: 2vw;
+
+    }
+
+    .social a {
+
+        margin-right: 4.5vw;
+        font-size: 1.4vw;
+        padding: 1.2vw;
+        border-radius: 5px;
+        border: 0.5px solid white;
+    }
+
+    .social i {
+
+        color: aliceblue;
+    }
+
+    .main-abt h1 {
+        margin-left: -10vw;
+        font-size: 5vw;
+
+    }
+
+    .main-abt p {
+
+        font-size: 2.5vw;
+        word-spacing: 4px;
+        font-weight: 100;
+        line-height: 4.5vw;
+    }
+    .skills {
+        height: 100vh;
+        padding-bottom: 0;
+
+
+
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 4vw;
+        font-size: 1rem;
+
+    }
+
+    .header {
+
+        font-size: 3.5vw;
+
+    }
+
+    .imghtml {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        border-radius: 40px;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        box-shadow: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .imghtml:hover{
+        width: 70px;
+        height: 70px;
+    }
+    .container3 {
+     
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    .container3 img {
+        width: 6vw;
+        height: 3vh;
+        position: relative;
+        margin-right: 20px;
+        margin-top: 3px;
+        top: 8px;
+        margin-top: 3vw;
+    }
+
+    .container3 h3 {
+        line-height: 1vw;
+        margin-top: -15px;
+        font-weight: 100;
+    }
+
+    .box3 {
+        width: 100%;
+        height: 80%;
+        background-image: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    form {
+
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        margin-top: 50vw;
+        font-size: 3.8vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input {
+
+        width: 86vw;
+        margin-top: -15px;
+        border-radius: 5px;
+
+    }
+
+    input::placeholder {
+        font-size: 5vw;
+    }
+
+    form textarea {
+
+        height: 60vh;
+        width: 86vw;
+        overflow-x: hidden;
+        border-radius: 5px;
+        border: none;
+        margin-top: -3vw;
+    }
+
+    textarea::placeholder {
+        font-size: 5vw;
+
+
+    }
+
+    .send {
+        border-radius: 5px;
+        width: 76vw;
+        height: 90px;
+        font-size: 5vw;
+        margin-top: 4vw;
+        padding: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive for Mobile devices */
 @media (max-width:480px) {
     .main {
