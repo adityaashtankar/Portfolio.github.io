@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var viewOnWebButton = document.getElementById('viewOnWebButton');
   if (isMobileDevice()) {
     viewOnWebButton.classList.add('mobile-only');
+    alert("Click to view on web button in Menu, for Best User Experience")
   }
 });
 
@@ -34,9 +35,11 @@ document.getElementById('viewOnWebButton').addEventListener('click', function() 
     anchor.setAttribute('target', '_blank');
     anchor.click();
 
-    // Remove the button from the DOM after it's clicked
+    // Remove the button from the DOM after a short delay (e.g., 500ms)
     var viewOnWebButton = document.getElementById('viewOnWebButton');
-    viewOnWebButton.parentNode.removeChild(viewOnWebButton);
+    setTimeout(function() {
+      viewOnWebButton.parentNode.removeChild(viewOnWebButton);
+    }, 500);
   }
 });
 var lastscolltop = 0;
