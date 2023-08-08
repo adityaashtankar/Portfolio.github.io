@@ -22,24 +22,7 @@ function isMobileDevice() {
 document.addEventListener('DOMContentLoaded', function() {
   var viewOnWebButton = document.getElementById('viewOnWebButton');
   if (isMobileDevice()) {
-    viewOnWebButton.classList.add('mobile-only');
-    alert("Click to view on web button in Menu, for Best User Experience")
-  }
-});
-
-document.getElementById('viewOnWebButton').addEventListener('click', function() {
-  if (isMobileDevice()) {
-    var currentUrl = window.location.href;
-    var anchor = document.createElement('a');
-    anchor.setAttribute('href', currentUrl);
-    anchor.setAttribute('target', '_blank');
-    anchor.click();
-
-    // Remove the button from the DOM after a short delay (e.g., 500ms)
-    var viewOnWebButton = document.getElementById('viewOnWebButton');
-    setTimeout(function() {
-      viewOnWebButton.parentNode.removeChild(viewOnWebButton);
-    }, 500);
+    alert("Use Your Device Browser like Chrome.. for Best User Experience");
   }
 });
 var lastscolltop = 0;
