@@ -1409,8 +1409,8 @@ textarea::placeholder {
         height: 37vh;
         margin-left: -30vw;
         border-radius: 50%;
-
-        box-shadow: #FDEE30 0px 10px 20px;
+        animation: none;
+        box-shadow: #FDEE30 0px 0px 5px;
 
     }
 
@@ -1493,7 +1493,10 @@ textarea::placeholder {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        padding: 8vw;
+        padding: 7vw;
+        position: relative;
+    
+        height: 80%;
         align-items: center;
         text-align: center;
         grid-gap: 2rem;
@@ -1505,6 +1508,7 @@ textarea::placeholder {
     .header {
 
         font-size: 6.5vw;
+
 
     }
 
@@ -1537,7 +1541,7 @@ textarea::placeholder {
     .hd {
 
         font-size: 4.5vw;
-
+     
         height: 120px;
 
     }
