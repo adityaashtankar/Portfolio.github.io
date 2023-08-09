@@ -1079,7 +1079,7 @@ textarea::placeholder {
         margin-right: 4.5vw;
         font-size: 1.4vw;
         padding: 1.2vw;
-        border-radius: 5px;
+        border-radius: 50%;
         border: 0.5px solid white;
     }
 
@@ -1104,11 +1104,7 @@ textarea::placeholder {
     .skills {
         height: 100vh;
         padding-bottom: 0;
-
-
-
-
-    }
+     }
 
     .container {
         display: grid;
@@ -1144,20 +1140,26 @@ textarea::placeholder {
         width: 70px;
         height: 70px;
     }
+    .contact {
+        flex-direction:column-reverse;
+    }
     .container3 {
      
-        flex-direction: column-reverse;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
 
     }
 
     .container3 img {
-        width: 6vw;
+        width: 4vw;
         height: 3vh;
         position: relative;
         margin-right: 20px;
-        margin-top: 3px;
-        top: 8px;
+        margin-top: 5px;
+        top: 2px;
         margin-top: 3vw;
     }
 
@@ -1165,14 +1167,14 @@ textarea::placeholder {
         line-height: 1vw;
         margin-top: -15px;
         font-weight: 100;
+        font-size: 3vw;
     }
 
     .box3 {
         width: 100%;
-        height: 80%;
+        height: 70%;
         background-image: none;
         border-radius: 10px;
-        display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
@@ -1184,8 +1186,8 @@ textarea::placeholder {
         width: 100%;
         height: 60vh;
         display: flex;
-        margin-top: 50vw;
-        font-size: 3.8vw;
+        margin-top:10vw;
+        font-size: 2.8vw;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1193,20 +1195,20 @@ textarea::placeholder {
 
     input {
 
-        width: 86vw;
+        width: 80vw;
         margin-top: -15px;
         border-radius: 5px;
 
     }
 
     input::placeholder {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     form textarea {
 
         height: 60vh;
-        width: 86vw;
+        width: 80vw;
         overflow-x: hidden;
         border-radius: 5px;
         border: none;
@@ -1214,19 +1216,66 @@ textarea::placeholder {
     }
 
     textarea::placeholder {
-        font-size: 5vw;
+        font-size: 3vw;
 
 
     }
 
     .send {
-        border-radius: 5px;
+      
         width: 76vw;
-        height: 90px;
-        font-size: 5vw;
+        border-radius: 5px;
+        height: 100px;
+        font-size: 3vw;
         margin-top: 4vw;
         padding: 0;
     }
+    .hd{
+        font-size: 2.8vw;
+    }
+    .hp{
+        font-size: 2.8vw;
+    }
+    .carousel .card h2 {
+
+        font-size: 2.8vw;
+        text-align: center;
+    }
+
+    .carousel .card span {
+        color: #6A6D78;
+        font-size: 2.2vw;
+        padding: 10px;
+
+    }
+    .wrapper i:first-child {
+        left: -10px;
+        border-right: none;
+    
+    }
+    
+    .wrapper i:last-child {
+        right:-10px;
+        border-left: none;
+    }
+    
+.wrapper {
+    max-width: 1100px;
+    width: 90%;
+    margin-top: -2vw;
+}
+.carousel .card {
+  width: 102%;
+}
+.btn-pro button{
+    font-size:1.5vw;
+}
+
+.to-top {
+    font-size: 30px !important;
+
+
+}
 
 
 
