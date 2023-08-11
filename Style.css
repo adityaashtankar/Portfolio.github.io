@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    background-color: #131212;
+    background-color: #080904;
     height: 80px;
     width: 100%;
     position: fixed;
@@ -290,21 +290,15 @@ b {
     align-items: center;
 }
 
-.all .shape {
-    z-index: 0;
-    left: -15vw;
-    position: relative;
-    transform: rotate(180deg);
-    height: 80vh;
-}
 
 .mine {
     z-index: 1;
-    width: 23vw;
-    left: 16vw;
-    top: -2vw;
-    position: relative;
-    border-radius: 50%;
+    width: 38vw;
+    left:-5vw;
+    top: 1vw;
+   position: relative;
+  
+
 }
 
 .about {
@@ -843,7 +837,7 @@ textarea::placeholder {
     font-weight: bolder;
     justify-content: center;
     font-size: 20px;
-    background-color: black;
+    background-color: #080904;
     height: 80px;
 
 }
@@ -889,6 +883,24 @@ textarea::placeholder {
     width: 30%;
     height: 30%;
 }
+.anime{
+    width: 5.5vw;
+    position: relative;
+
+
+  
+
+
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2));
@@ -1007,35 +1019,9 @@ textarea::placeholder {
         position: relative;
        
     }
-    .shape {
-   display: none;
-    }
     .mine{
-        width:50%;
-        border:2px solid #FDEE30;
-        box-shadow: 0px 0px 14px #FDEE30;
-        animation: pop 2s infinite ease-in-out;
-        transition: all 2s infinite ease-in-out;
+        width:60vw;
 
-    }
-    @keyframes pop {
-        25%{
-            box-shadow:0px 0px 10px #FDEE30; 
-
-        }
-        50%{
-            box-shadow:0px 0px 15px #FDEE30; 
-
-        }
-        75%{
-            box-shadow:0px 0px 20px #FDEE30; 
-
-        }
-        100%{
-            box-shadow:0px 0px 25px #FDEE30; 
-
-        }
-        
     }
     .about{
         flex-direction: column-reverse;
@@ -1385,7 +1371,7 @@ textarea::placeholder {
 
         width: 22vw;
         height: 4vh;
-        margin-top: 2vw;
+        margin-top: 5vw;
         font-size: 3vw;
 
     }
@@ -1398,20 +1384,9 @@ textarea::placeholder {
 
         align-items: center;
     }
-
-    .shape {
-        display: none;
-
-    }
-
     .mine {
-        width: 70vw;
-        height: 37vh;
-        margin-left: -30vw;
-        border-radius: 50%;
-        animation: none;
-        box-shadow: #FDEE30 0px 0px 5px;
-
+        width: 105vw;
+        margin-left: 25px;
     }
 
     .about {
@@ -1729,6 +1704,10 @@ textarea::placeholder {
     } */
     nav {
         width: 100vw;
+    }
+    .anime{
+        width: 10vw;
+        margin-left: -9vw;
     }
 
 }
