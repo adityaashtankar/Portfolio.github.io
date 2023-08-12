@@ -10,6 +10,13 @@ body {
     background-color: #201e1e;
     color: white;
 }
+body::-webkit-scrollbar{
+    background-color:#201e1e;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:#FDEE30 ;
+    border-radius: 10px;
+}
 
 nav {
     background-color: #080904;
@@ -298,7 +305,7 @@ b {
     left:-5vw;
     top: 1vw;
    position: relative;
-  
+  filter: drop-shadow( 0px 0px 30px  black);
 
 }
 
@@ -307,6 +314,7 @@ b {
     height: 100%;
     position: relative;
     display: flex;
+    background-color:#1c1a1a;
 
 
 }
@@ -323,6 +331,7 @@ b {
     width: 60%;
     height: 60%;
     animation: zoom 3s linear infinite;
+    box-shadow: 0px 0px 30px black;
 
 
 }
@@ -367,6 +376,7 @@ b {
     border: 2px solid white;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0px 0px 20px black;
     transition: all 0.3s ease-in-out;
 
 }
@@ -508,7 +518,9 @@ b {
     height: calc(100vh - 90px);
     margin-top: -1.3vw;
     display: flex;
+    background-color:#1c1a1a;
 }
+
 
 .hd h1 {
 
@@ -517,7 +529,8 @@ b {
     justify-content: center;
     margin-left: -8vw;
     position: relative;
-    top: -4vw;
+    background-color:#1c1a1a;
+    top: 4vw;
 }
 
 .hd h1::before {
