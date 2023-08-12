@@ -11,7 +11,7 @@ body {
     color: white;
 }
 body::-webkit-scrollbar{
-    background-color:#201e1e;
+    background-color:transparent;
 }
 body::-webkit-scrollbar-thumb{
     background-color:#FDEE30 ;
@@ -515,7 +515,7 @@ b {
 
 .contact {
     width: 100%;
-    height: calc(100vh - 90px);
+    height:100vh;
     margin-top: -1.3vw;
     display: flex;
     background-color:#1c1a1a;
@@ -561,8 +561,8 @@ b {
 
 .box3 {
     width: 40vw;
-    height: 70%;
-    margin-top: 2vw;
+    height: 60%;
+    margin-top: 8vw;
     background-image: url(Images/contact.webp);
     background-size: cover;
     border-radius: 10px;
