@@ -173,7 +173,7 @@ b {
 
 .head .bottom {
     font-size: 4.2vw;
-    margin-top: 10vw;
+    margin-top: 150px;
 }
 
 .head .about0 {
@@ -651,24 +651,21 @@ textarea::placeholder {
     top: 8px;
 }
 
-.hp {
-    width: 100%;
-    height: 120px;
-    font-size: 1.1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    position: relative;
+.hp h1 {
 
+    display: flex;
+    font-size:2.5vw;
+    justify-content: center;
+    margin-left: -8vw;
+    position: relative;
 }
 
 .hp h1::before {
     content: '';
-    width: 3.8em;
-
-    position: absolute;
-    top: 12vh;
+    width: 3em;
+    left: 3em;
+    position: relative;
+    top: 1.2em;
     height: 5px;
     border-radius: 10px;
     background-color: #FDEE30;
@@ -933,6 +930,7 @@ textarea::placeholder {
         top: -100%;
         background-color:#201e1e;
         text-align: center;
+
         transition: all 0.5s;
 
     }
@@ -940,6 +938,7 @@ textarea::placeholder {
 
     nav ul li {
         display: block;
+        margin-left:-60px;
 
 
     }
@@ -950,7 +949,6 @@ textarea::placeholder {
         line-height: 10px;
 
     }
-
     a:hover,
     a.active {
         background: none;
@@ -959,7 +957,7 @@ textarea::placeholder {
     }
 
     #check:checked~ul {
-        top: 50px;
+        top: 60px;
     }
     .main {
         flex-direction: column;
@@ -1002,7 +1000,7 @@ textarea::placeholder {
     }
     .head .bottom {
         font-size: 7vw;
-      
+        margin-top: 70px;
         line-height: 15vw;
     }
 
@@ -1376,6 +1374,7 @@ textarea::placeholder {
         width: 22vw;
         height: 4vh;
         margin-top: 5vw;
+        box-shadow: none;
         font-size: 3vw;
 
     }
@@ -1518,6 +1517,9 @@ textarea::placeholder {
 
     .hd {
          height: 120px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
         }
     .hd h1{
         font-size: 9vw;
@@ -1576,7 +1578,7 @@ textarea::placeholder {
         width: 100%;
         height: 60vh;
         display: flex;
-        margin-top: 50vw;
+        margin-top: 40vw;
         font-size: 3.8vw;
         justify-content: center;
         align-items: center;
@@ -1628,12 +1630,21 @@ textarea::placeholder {
     .project {
         padding: 0;
         width: 97%;
+        height: calc(100vh - 100px);
 
 
     }
+    .hp{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    .hp {
-        font-size: 4vw;
+    .hp h1{
+        font-size: 9vw;
+        position: relative;
+        margin-left: -3em;
     }
 
     .carousel .card {
