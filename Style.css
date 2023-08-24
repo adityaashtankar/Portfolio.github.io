@@ -947,8 +947,9 @@ textarea::placeholder {
         position:fixed;
         width: 40%;
         height: 100%;
-       margin-top: -27px;
-        right: -60%;
+        margin-top: -27px;
+        margin-right: 0;
+        right: -75%;
         background-color:#201e1e;
         text-align: center;
         transition: all 0.5s;
@@ -977,7 +978,7 @@ textarea::placeholder {
     }
 
     #check:checked~ul {
-        right: -80px;
+        right: 0px;
     }
     .main {
         flex-direction: column;
