@@ -95,10 +95,6 @@ nav .log {
     mix-blend-mode: screen;
 
 }
-
-
-
-
 .main {
     width: 100%;
     height: 100%;
@@ -949,11 +945,12 @@ textarea::placeholder {
     }
     nav ul {
         position:fixed;
-        width: 100%;
-        top: -100%;
+        width: 40%;
+        height: 100%;
+       margin-top: -27px;
+        right: -60%;
         background-color:#201e1e;
         text-align: center;
-
         transition: all 0.5s;
 
     }
@@ -961,14 +958,14 @@ textarea::placeholder {
 
     nav ul li {
         display: block;
-        margin-left:-60px;
+        /* margin-left:-60px; */
 
 
     }
 
     nav ul li a {
         font-size: 16px;
-        margin: 10px 0px;
+     
         line-height: 10px;
 
     }
@@ -980,7 +977,7 @@ textarea::placeholder {
     }
 
     #check:checked~ul {
-        top: 60px;
+        right: -80px;
     }
     .main {
         flex-direction: column;
