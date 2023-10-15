@@ -597,7 +597,6 @@ input {
     height: 20px;
     background-color: white;
     line-height: 10px;
-    box-shadow: 0 0px 10px black;
     border: none;
     font-size: larger;
     padding: 15px;
@@ -617,7 +616,6 @@ form textarea {
     overflow-x: hidden;
     padding: 15px;
     margin: 5px;
-    box-shadow: 0 0px 10px black;
     font-size: larger;
     border-radius: 10px;
     border: none;
@@ -638,7 +636,6 @@ textarea::placeholder {
     border-radius: 10px;
     border: none;
     margin: 20px;
-    box-shadow: 0 0px 10px black;
     background-color: white;
     color: whitesmoke;
     width: 110px;
