@@ -144,3 +144,32 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
+
+
+  // Function to toggle between light and dark mode
+  function toggleDarkMode() {
+    const body = document.body;
+    const isDarkMode = body.classList.contains('dark-mode');
+
+    // Toggle the dark mode class on the body
+    body.classList.toggle('dark-mode', !isDarkMode);
+
+    // Update the button text based on the mode
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
+
+    // Save the user's preference to localStorage
+    localStorage.setItem('darkMode', !isDarkMode);
+  }
+
+  // Check for user's dark mode preference from localStorage
+  const savedDarkMode = localStorage.getItem('darkMode');
+  if (savedDarkMode) {
+    document.body.classList.toggle('dark-mode', savedDarkMode === 'true');
+    
+    // Update the button text based on the mode
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.textContent = savedDarkMode === 'true' ? 'Dark Mode' : 'Light Mode';
+  }
+
+
