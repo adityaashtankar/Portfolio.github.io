@@ -403,7 +403,7 @@ b {
 
 }
 
-@keyframes zoom {
+/* @keyframes zoom {
     25% {
         scale: 1;
     }
@@ -419,7 +419,7 @@ b {
     100% {
         scale: 1;
     }
-}
+} */
 
 .main-abt {
     width: 60vw;
