@@ -1,8 +1,8 @@
 function sendEmail() {
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: "adityaashtankar.14@gmail.com",
-    Password: "823F756897BEA232241ACD38592C3941BFFF",
+    Username: "adityaa.ee21@sbjit.edu.in",
+    Password: "F7E8B9222BDA7109ECF68529165974C4F260",
     To: "adityaa.ee21@sbjit.edu.in",
     From: "adityaashtankar.14@gmail.com",
     Subject: "Portfolio Contact Page",
@@ -13,7 +13,16 @@ function sendEmail() {
       document.getElementById("email").value +
       "<br> Message:" +
       document.getElementById("message").value,
-  }).then((message) => alert("Message sent successfully"));
+  }).then(message=>{
+    if(message == "OK"){
+      Swal.fire({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success"
+      });
+    }
+
+  });
 }
 function isMobileDevice() {
   return window.innerWidth <= 508;
@@ -133,7 +142,7 @@ const infiniteScroll = () => {
 const autoPlay = () => {
   if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
   // Autoplay the carousel after every 2500 ms
-  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 1000);
 };
 autoPlay();
 
