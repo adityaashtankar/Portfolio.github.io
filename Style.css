@@ -1030,7 +1030,6 @@ textarea::placeholder {
         text-align: center;
         transition: all 0.5s;
 
-        /* Vertical mobile menu */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1038,31 +1037,27 @@ textarea::placeholder {
         gap: 25px;
         padding-top: 40px;
         box-sizing: border-box;
+
+        
+       
+       
+    
+
     }
+
 
     nav ul li {
         display: block;
-        margin: 0;
+        /* margin-left:-60px; */
+
+
     }
 
     nav ul li a {
         font-size: 16px;
-        line-height: normal;
-    }
 
-    /* Center the theme icon in the mobile menu */
-    #darkModeToggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
+        line-height: 10px;
 
-    #modeIcon {
-        display: block;
-        width: 24px;
-        height: 24px;
-        object-fit: contain;
     }
 
     a:hover,
@@ -1071,7 +1066,6 @@ textarea::placeholder {
         color: #FDEE30;
         font-size: 16.5px;
     }
-}
 
     #check:checked~ul {
         right: 0px;
@@ -1409,7 +1403,7 @@ textarea::placeholder {
 
 
 
-
+}
 
 
 
