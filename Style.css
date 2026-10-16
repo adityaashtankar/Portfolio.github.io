@@ -12,27 +12,13 @@ body {
     transition: all .2s ease-in-out;
 
 }
+
 /* Add styles for dark mode */
 .dark-mode {
     background-color: #2C87EA;
     color: #fff;
     transition: all .2s ease-in-out;
   }
-  
-  /* Add styles for the dark mode toggle button */
-.dark-btn {
-    background-color: #FDEE30;
-    color: #131212;
-    border-radius: 2px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    transition: all .2s ease-in-out;
-  }
-  
   /* Additional styling for dark mode, you can customize these styles */
    .dark-mode .dark-btn{
     background-color: #2C87EA;
@@ -56,7 +42,7 @@ body {
 
   }
   .dark-mode .mine{
-    filter: drop-shadow(0px 0px 50px black );
+    filter: drop-shadow(0px 0px 20px black );
     transition: all .2s ease-in-out;
 
   }
@@ -89,14 +75,21 @@ nav {
 nav ul {
     float: right;
     margin-right: 80px;
+
+    /* Flexbox alignment */
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 26px;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline-block;
-    line-height: 50px;
-    margin: 0 13px;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+    margin: 0;
     font-family: "Audiowide";
-
 }
 
 nav ul li a {
@@ -152,6 +145,27 @@ nav .log {
     transform: translateY(-8px);
     mix-blend-mode: screen;
 
+}
+/* Theme toggle button */
+#darkModeToggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Theme icon */
+#modeIcon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .main {
@@ -1016,21 +1030,39 @@ textarea::placeholder {
         text-align: center;
         transition: all 0.5s;
 
+        /* Vertical mobile menu */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 25px;
+        padding-top: 40px;
+        box-sizing: border-box;
     }
-
 
     nav ul li {
         display: block;
-        /* margin-left:-60px; */
-
-
+        margin: 0;
     }
 
     nav ul li a {
         font-size: 16px;
+        line-height: normal;
+    }
 
-        line-height: 10px;
+    /* Center the theme icon in the mobile menu */
+    #darkModeToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
+    #modeIcon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
     }
 
     a:hover,
@@ -1039,6 +1071,7 @@ textarea::placeholder {
         color: #FDEE30;
         font-size: 16.5px;
     }
+}
 
     #check:checked~ul {
         right: 0px;
@@ -1484,7 +1517,6 @@ textarea::placeholder {
         width: 100%;
         height: 100%;
         justify-content: center;
-
         align-items: center;
     }
 
